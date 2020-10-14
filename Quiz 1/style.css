@@ -1,0 +1,231 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* border: 2px solid red;
+     */
+}
+
+.kotak1 {
+    padding-top: 10px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand.brand1{
+    font-family: Viga;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+
+
+.nav-link {
+    text-transform: uppercase;
+    margin-right: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.2s;
+    
+}
+
+nav .navbar-brand {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+nav .navbar-nav li a{
+    color: #ffffff!important;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+
+nav .navbar-nav li a:hover{
+    color: #255874!important;
+}
+
+.nav-link:hover {
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3 ,0 0 80px #2196f3;
+}
+
+.jumbotron {
+    background-image: url(img/bgProfile.jpg);
+    background-size: cover;
+    /* height: 1095px; */
+    position: relative;
+    height: 100vh;
+    margin-bottom: 0 !important;
+    /* border: 5px solid red; */
+}
+
+.jumbotron .container {
+
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top ,rgba(0,0,0,0.8), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+
+}
+
+.home {
+    align-items: center;
+}
+
+
+.caption {
+    margin-top: 30%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.caption h1 {
+    font-size: 80px;
+    color: #2196f3;
+    animation : glow 3s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes glow {
+    from{
+        
+        text-shadow: none;
+    }
+    to {
+        transform: scale(1.2);
+        text-shadow:0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3; ;
+    }
+}
+
+/* neon button */
+.neonbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    /* min-height: 75vh; */
+    margin-top: 50px;
+}
+
+.neonbox a {
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: #031321;
+    /* border-radius: 10px; */
+    text-decoration: none !important;
+    width: 20%;
+}
+
+.neonbox a:hover {
+    transform: scale(1.2);
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.neonbox a span {
+    position: absolute;
+    display: block;
+}
+
+.neonbox a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.neonbox a:hover span:nth-child(1) {
+    left: 100%;
+    transition : 1s;
+}
+
+.neonbox a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.neonbox a:hover span:nth-child(3) {
+    right: 100%;
+    transition : 1s;
+    transition-delay: 0.5s;
+}
+
+.neonbox a span:nth-child(2) {
+    right: 0;
+    top: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.neonbox a:hover span:nth-child(2) {
+    top: 100%;
+    transition : 1s;
+    transition-delay: 0.25s;
+}
+
+.neonbox a span:nth-child(4) {
+    left: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.neonbox a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition : 1s;
+    transition-delay: 0.75s;
+}
+
+
+/* footer */
+.copyright {
+    position: relative;;
+    border:2px solid red;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 991.98px) { 
+    .navbar-brand.brand1{
+        margin-left: 0px;
+    }
+
+    .caption {
+        margin-top: 50%;
+    }
+ }
+
+
