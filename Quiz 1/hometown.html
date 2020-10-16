@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleProfile.css">
+    <title>Hometown</title>
+    <link rel="stylesheet" href="styleHometown.css">
 
+    
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -12,10 +14,11 @@
      <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Profile</title>
 </head>
 <body>
     
+
+        
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid kotak1">
@@ -26,40 +29,50 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
-                  <a class="nav-link" href="../index.html">Home</a>
+                  <a class="nav-link" href="index">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Profile</a>
+                  <a class="nav-link" href="profile">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../hometown/hometown.html">Hometown</a>
+                    <a class="nav-link" id="here"href="#"><span>Hometown</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../food/food.html">Food</a>
+                    <a class="nav-link" href="food">Food</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../tourist/tourist.html">Tourist</a>
+                    <a class="nav-link" href="tourist">Tourist</a>
                   </li>
               </ul>
           </div>
         </nav>
       <!-- akhir navbar -->
-  
-        <!-- jumbotron -->
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container-fluid home justify-content-center ">
-              <div class="row profile">
-                  <div class="col-md-3 offset-md-2 column image">
-                      <img src="../img/Profile.jpg" class="imgProfile" alt="" width="450">
-                  </div>
-                  <div class="col-md-4 column detail" column>
-                      <h1>Rafif Ridho</h1>
-                      <p>Hello! Im Rafif Ridho, based in Bandung, Indonesia. Right now im studying at Institut Teknologi Sepuluh Nopember majoring in CS or Informatics. </p>
-                  </div>
-              </div>
-          </div>
-        </div>
 
+      <!-- jumbotron -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid home justify-content-center ">
+            <div class="row hometown">
+                <div class="col-md-3 offset-md-3 image">
+                    <img src="img/pasopati.png" width="450" alt="">
+                </div>
+                <div class="col-md-4 caption">
+                    <h1>Bandung</h1>
+                    <p>Bandung, which is my hometown is one of the biggest metropolis city in Jawa Barat Province.  </p> 
+                </div>
+            </div>
+            <div class="row climate">
+                <div class="col-md-6 offset-md-3">
+                  <p>Bandung climate is considered chill even though its located in tropical country. The average temperature at Bandung is 23.3°C . Bandung low temperature is caused by the location of Bandung it self which is surrounded by mountain making wind from mountainse go to the city. Bandung it self is a big crater.</p>
+                </div>
+                <div class="col-md-3">
+                  
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
